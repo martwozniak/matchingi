@@ -1,13 +1,13 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 import { trpc } from "../utils/trpc";
-import Map from "../components/Map/Map";
+
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+
 import Filters from "../components/Filters/Filters";
+import SpecialOfferBar from "../components/SpecialOfferBar/SpecialOfferBar";
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
@@ -27,6 +27,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-[#140130] to-[#15162c]">
         <Header />
+        <SpecialOfferBar prompt="Special christmas offer" discount={20} />
         <div className="flex w-full justify-between">
           <div className="__filters">
             <Filters />

@@ -1,7 +1,5 @@
 import React from "react";
 
-type Props = {};
-
-export default function Order({}: Props) {
+export default function Order() {
   return <div>Order job post</div>;
 }
