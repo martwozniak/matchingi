@@ -29,13 +29,13 @@ const Home: NextPage = () => {
         <Header />
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
         <div className="flex w-full justify-between">
-          <div className="__filters">
+          <div className="__filters w-full max-w-[15%]">
             <Filters />
           </div>
-          <div className="__offers">
+          <div className="__offers w-full bg-red-500">
             <span>Oferty</span>
           </div>
-          <div className="__map">
+          <div className="__map w-full">
             <span>Mapa</span>
           </div>
         </div>
