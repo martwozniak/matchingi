@@ -7,6 +7,7 @@ import { trpc } from "../utils/trpc";
 import Map from "../components/Map/Map";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import Filters from "../components/Filters/Filters";
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
         <Header />
         <div className="flex w-full justify-between">
           <div className="__filters">
-            <span>Filtry</span>
+            <Filters />
           </div>
           <div className="__offers">
             <span>Oferty</span>
