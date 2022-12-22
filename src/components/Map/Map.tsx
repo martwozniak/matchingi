@@ -28,7 +28,7 @@ export default function Map() {
   // TODO: Change height of the website in normal way
   return (
     <div className="map-wrap h-full ">
-      <div ref={mapContainer} className="map-container h-[90vh]" />
+      <div ref={mapContainer} className="map-container max-h-80vh h-[95vh]" />
     </div>
   );
 }

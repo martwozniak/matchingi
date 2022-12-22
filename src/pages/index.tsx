@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-[#140130] to-[#15162c]">
+      <main className="flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-[#140130] to-[#0D0D0D]">
         <Header />
         {/*  
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
