@@ -20,7 +20,7 @@ export default function Map() {
     if (map.current) return; //stops map from intializing more than once
     map.current = new maplibregl.Map({
       container: mapContainer.current,
-      style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${API_KEY}`,
+      style: `https://api.maptiler.com/maps/streets-v2-dark/style.json?key=${API_KEY}`,
       center: [lng, lat],
       zoom: zoom,
     });

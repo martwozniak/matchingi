@@ -28,24 +28,22 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-[#140130] to-[#15162c]">
         <Header />
+        {/*  
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
+        */}
         <div className="flex min-h-full w-full justify-between">
           <div className="__filters w-full max-w-[15%]">
             <Filters />
           </div>
           <div className="__offers w-full">
-            <span>Oferty</span>
-          </div>
-          <div className="__map h-full w-full">
-            <Map />
-          </div>
-        </div>
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-          <div className="flex flex-col items-center gap-2">
+            <span>Oferty / Feed</span>
             <p className="text-2xl text-white">
               {hello.data ? hello.data.greeting : "Loading tRPC query..."}
             </p>
             <AuthShowcase />
+          </div>
+          <div className="__map h-full w-full">
+            <Map />
           </div>
         </div>
       </main>
