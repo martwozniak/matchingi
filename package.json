@@ -21,6 +21,8 @@
     "@trpc/server": "^10.0.0",
     "@types/geojson": "^7946.0.10",
     "@types/mapbox-gl": "^2.7.10",
+    "@types/maplibre-gl": "^1.14.0",
+    "mapbox-gl": "^2.11.1",
     "maplibre-gl": "^2.4.0",
     "next": "13.0.2",
     "next-auth": "^4.18.3",

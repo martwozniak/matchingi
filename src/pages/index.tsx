@@ -8,6 +8,7 @@ import Header from "../components/Header/Header";
 
 import Filters from "../components/Filters/Filters";
 import SpecialOfferBar from "../components/SpecialOfferBar/SpecialOfferBar";
+import Map from "../components/Map/Map";
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
@@ -28,15 +29,15 @@ const Home: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-[#140130] to-[#15162c]">
         <Header />
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
-        <div className="flex w-full justify-between">
+        <div className="flex min-h-full w-full justify-between">
           <div className="__filters w-full max-w-[15%]">
             <Filters />
           </div>
-          <div className="__offers w-full bg-red-500">
+          <div className="__offers w-full">
             <span>Oferty</span>
           </div>
-          <div className="__map w-full">
-            <span>Mapa</span>
+          <div className="__map h-full w-full">
+            <Map />
           </div>
         </div>
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
