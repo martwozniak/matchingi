@@ -25,10 +25,13 @@ export default function Map() {
       zoom: zoom,
     });
   });
-  // TODO: Change height of the website in normal way
+  // ! TODO: Change height of the website in normal way
   return (
     <div className="map-wrap h-full ">
-      <div ref={mapContainer} className="map-container max-h-80vh h-[95vh]" />
+      <div
+        ref={mapContainer}
+        className="map-container max-h-80vh max-w-screen h-[95vh] w-full w-[50vw]"
+      />
     </div>
   );
 }

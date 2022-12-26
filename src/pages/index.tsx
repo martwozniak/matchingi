@@ -9,6 +9,7 @@ import Header from "../components/Header/Header";
 import Filters from "../components/Filters/Filters";
 import SpecialOfferBar from "../components/SpecialOfferBar/SpecialOfferBar";
 import Map from "../components/Map/Map";
+import SelectMenu from "../components/SelectMenu/SelectMenu";
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
@@ -28,11 +29,12 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-[#140130] to-[#0D0D0D]">
         <Header />
+        <SelectMenu />
         {/*  
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
         */}
-        <div className="flex min-h-full w-full justify-between">
-          <div className="__filters w-full max-w-[15%]">
+        <div className="flex min-h-full w-full flex-col justify-between sm:flex-row">
+          <div className="__filters hidden w-full">
             <Filters />
           </div>
           <div className="__offers w-full">
@@ -42,7 +44,7 @@ const Home: NextPage = () => {
             </p>
             <AuthShowcase />
           </div>
-          <div className="__map h-full w-full">
+          <div className="__map hidden h-full w-full sm:flex sm:w-full">
             <Map />
           </div>
         </div>
