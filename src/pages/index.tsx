@@ -28,17 +28,40 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-[#140130] to-[#0D0D0D]">
+      <main className="flex max-h-screen flex-col items-center justify-start bg-gradient-to-b from-[#140130] to-[#0D0D0D] scrollbar scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-gray-800">
         <Header />
         <SelectMenu />
         {/*  
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
         */}
-        <div className="flex min-h-full w-full flex-col justify-between sm:flex-row">
+        <div className="flex max-h-full w-full flex-col justify-between sm:flex-row ">
           <div className="__filters hidden w-full">
             <Filters />
           </div>
-          <div className="__offers w-full">
+          <div className="__offers h=full max-h-[92vh] w-full overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-gray-800">
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
+            <SingleJobElement />
             <SingleJobElement />
 
             <p className="text-2xl text-white">
@@ -46,7 +69,7 @@ const Home: NextPage = () => {
             </p>
             <AuthShowcase />
           </div>
-          <div className="__map hidden h-full w-full sm:flex sm:w-full">
+          <div className="__map hidden h-full max-h-full w-full sm:flex sm:w-full ">
             <Map />
           </div>
         </div>
