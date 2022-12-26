@@ -37,7 +37,7 @@ export default function SingleJobElement() {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <div className="Salary rounded-md bg-black py-2 px-2 sm:px-6">
+        <div className="Salary rounded-md bg-black py-2 px-2 md:px-6">
           <span>17 000 - 35 000 PLN</span>
         </div>
         <div className="flex items-center justify-between">
