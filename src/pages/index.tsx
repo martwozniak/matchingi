@@ -3,7 +3,7 @@ import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 import { trpc } from "../utils/trpc";
-
+import { useRouter } from "next/router";
 import Header from "../components/Header/Header";
 
 import Filters from "../components/Filters/Filters";
@@ -14,7 +14,8 @@ import SingleJobElement from "../components/SingleJobElement/SingleJobElement";
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
-
+  const { locale, locales, defaultLocale } = useRouter();
+  console.log(locale, locales, defaultLocale);
   return (
     <>
       <Head>
