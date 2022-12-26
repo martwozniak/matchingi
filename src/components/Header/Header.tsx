@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { RxPinRight, RxPlus } from "react-icons/rx";
 
 export default function Header() {
   return (
@@ -13,14 +14,17 @@ export default function Header() {
 
       <div className="flex gap-4">
         <Link href={"/login"}>
-          <span className="hover:opacity-85 cursor-pointer select-none rounded-md bg-gray-600/60 px-4 py-2  text-sm font-semibold text-white transition hover:bg-gray-600/70">
-            Log in
-          </span>
+          <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md bg-gray-600/60 px-4 py-2  text-sm font-semibold text-white transition hover:bg-gray-600/70">
+            <RxPinRight /> <span>Log in</span>
+          </div>
         </Link>
         <Link href={"/add-offer"}>
-          <span className="hover:opacity-85 cursor-pointer select-none rounded-md  bg-yellow-700/60 px-4 py-2 text-sm font-semibold text-white transition hover:bg-yellow-700/70">
-            Add job post for 49$
-          </span>
+          <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-yellow-700/60 px-4 py-2 text-sm font-semibold text-white transition hover:bg-yellow-700/70">
+            <RxPlus />
+            <span>
+              Add job post for <span className="font-bold">47$</span>
+            </span>
+          </div>
         </Link>
       </div>
     </div>

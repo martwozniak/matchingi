@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           <div className="__filters hidden w-full">
             <Filters />
           </div>
-          <div className="__offers h=full max-h-[92vh] w-full overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-gray-800">
+          <div className="__offers h=full max-h-screen w-full overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-gray-800">
             <SingleJobElement />
             <SingleJobElement />
             <SingleJobElement />

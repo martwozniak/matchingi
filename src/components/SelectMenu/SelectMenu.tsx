@@ -3,7 +3,7 @@ import TechnologyCardWithIcon from "../TechnologyCardWithIcon/TechnologyCardWith
 
 export default function SelectMenu() {
   return (
-    <div className="bg-grey-700 min-h-[60px] w-full">
+    <div className="bg-grey-700 hidden min-h-[60px] w-full sm:flex">
       <div className="flex">
         <TechnologyCardWithIcon
           icon="react"
