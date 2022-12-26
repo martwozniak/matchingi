@@ -64,3 +64,15 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+
+
+model Technology {
+  id           String   @id @default(cuid())
+  name      String   
+  description    String
+  fallowersCount Int // relations with user model
+  companiesCount Int // relations with companies model
+
+  @@unique([id])
+}

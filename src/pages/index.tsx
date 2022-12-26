@@ -10,6 +10,7 @@ import Filters from "../components/Filters/Filters";
 import SpecialOfferBar from "../components/SpecialOfferBar/SpecialOfferBar";
 import Map from "../components/Map/Map";
 import SelectMenu from "../components/SelectMenu/SelectMenu";
+import SingleJobElement from "../components/SingleJobElement/SingleJobElement";
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
@@ -38,7 +39,8 @@ const Home: NextPage = () => {
             <Filters />
           </div>
           <div className="__offers w-full">
-            <span>Oferty / Feed</span>
+            <SingleJobElement />
+
             <p className="text-2xl text-white">
               {hello.data ? hello.data.greeting : "Loading tRPC query..."}
             </p>
