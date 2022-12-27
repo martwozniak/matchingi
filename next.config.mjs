@@ -12,7 +12,6 @@ const config = {
   i18n: {
     locales: ["default", "en", "fr", "jp", "de", "pl", "ua", "tr"],
     defaultLocale: "default",
-    localeDetection: false,
   },
   trailingSlash: true,
 };

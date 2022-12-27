@@ -8,10 +8,11 @@ export default function Map() {
 
   let defLng = 139.753;
   let defLat = 35.6844;
-
-  // if (locale == "en") {
-  //   defLng = 15.55;
-  // }
+  // get location coordinates from db
+  if (locale == "en") {
+    defLng = 15.535;
+    defLat = 36.5436;
+  }
 
   //const mapContainer = useRef(null);
   //const mapContainer = useRef<HTMLElement | null>(null);

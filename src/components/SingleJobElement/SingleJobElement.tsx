@@ -8,6 +8,12 @@ import {
 } from "react-icons/rx";
 
 export default function SingleJobElement() {
+  function showRegisterPopup() {
+    alert(
+      "To use Fast apply You have to register and upload your Resume and motivation letter! Please create account 🚀"
+    );
+  }
+
   return (
     <div className="mx-2 my-2 flex cursor-pointer justify-between rounded-md bg-white/10 py-3 px-3 text-xs text-white hover:bg-white/20">
       <div>
@@ -41,7 +47,10 @@ export default function SingleJobElement() {
           <span>17 000 - 35 000 PLN</span>
         </div>
         <div className="flex items-center justify-between">
-          <div className="flex w-full items-center justify-center gap-4 rounded-md bg-green-600 py-2 px-2">
+          <div
+            onClick={showRegisterPopup}
+            className="flex w-full items-center justify-center gap-4 rounded-md bg-green-600 py-2 px-2 transition-all hover:bg-green-800"
+          >
             <RxPaperPlane /> <span>Fast apply</span>
           </div>
         </div>

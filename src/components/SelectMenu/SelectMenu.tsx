@@ -1,10 +1,9 @@
 import React from "react";
 import TechnologyCardWithIcon from "../TechnologyCardWithIcon/TechnologyCardWithIcon";
-
 export default function SelectMenu() {
   return (
-    <div className="bg-grey-700 hidden min-h-[60px] w-full sm:flex">
-      <div className="flex">
+    <div className="bg-grey-700 hidden min-h-[60px] max-w-full sm:flex">
+      <div className="scroll flex max-w-full overflow-y-scroll scroll-smooth scrollbar scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-gray-800">
         <TechnologyCardWithIcon
           icon="react"
           text="React.js"
@@ -73,6 +72,96 @@ export default function SelectMenu() {
         <TechnologyCardWithIcon
           icon="putty"
           text="Admin"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
+          description="Programming language with more than 6000 companies using it worldwide"
+        />
+        <TechnologyCardWithIcon
+          icon="flutter"
+          text="Mobile"
           description="Programming language with more than 6000 companies using it worldwide"
         />
         <TechnologyCardWithIcon
