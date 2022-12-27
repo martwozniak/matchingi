@@ -19,7 +19,7 @@ export default function Header() {
           </div>
         </Link>
         <Link href={"/add-offer"}>
-          <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-green-700/60 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-700/70">
+          <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-green-600  px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-500">
             <RxPlus />
             <span>
               Add job post for <span className="font-bold">47$</span>
