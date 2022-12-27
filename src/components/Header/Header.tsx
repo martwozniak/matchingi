@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { RxPinRight, RxPlus } from "react-icons/rx";
+import { RxPinRight, RxPlus, RxPaperPlane } from "react-icons/rx";
 
 export default function Header() {
   return (
@@ -20,10 +20,11 @@ export default function Header() {
         </Link>
         <Link href={"/add-offer"}>
           <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-green-600  px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-500">
-            <RxPlus />
+            <RxPaperPlane /> {/* RxPlus */}
             <span>
               Add job post for <span className="font-bold">47$</span>
             </span>
+            <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-green-400 opacity-75"></span>
           </div>
         </Link>
       </div>
