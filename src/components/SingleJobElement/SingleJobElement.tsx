@@ -39,7 +39,7 @@ export default function SingleJobElement() {
             </div>
             <div className="flex items-center justify-center gap-2">
               <RxBackpack />
-              <span>B2B / UOP / UZ / UOD</span>
+              <span>B2B {/* / UOP / UZ / UOD */}</span>
             </div>
           </div>
           <div className="flex gap-2 pt-2">
