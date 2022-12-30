@@ -1,17 +1,18 @@
 import React, { useRef, useEffect, useState } from "react";
 import maplibregl from "maplibre-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+
 import { useRouter } from "next/router";
 //mapboxgl.accessToken = "4lOMEJLMkq3nCLCp0FnT";
 
 export default function Map() {
   const { locale, locales, defaultLocale } = useRouter();
 
-  let defLng = 139.753;
-  let defLat = 35.6844;
+  let defLng = 21.02;
+  let defLat = 52.23;
   // get location coordinates from db
   if (locale == "en") {
-    defLng = 15.535;
-    defLat = 36.5436;
+    defLng = 21.02;
+    defLat = 52.23;
   }
 
   //const mapContainer = useRef(null);
@@ -23,7 +24,7 @@ export default function Map() {
   const map = useRef<maplibregl.Map | null>(null);
   const [lng] = useState(defLng);
   const [lat] = useState(defLat);
-  const [zoom] = useState(12);
+  const [zoom] = useState(5);
   const [API_KEY] = useState("4lOMEJLMkq3nCLCp0FnT");
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Map() {
       <div
         ref={mapContainer}
         className="map-container max-h-80vh max-w-screen h-[95vh] w-full w-[50vw]"
-      />
+      ></div>
     </div>
   );
 }

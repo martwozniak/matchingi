@@ -4,7 +4,7 @@ import { RxPinRight, RxPlus, RxPaperPlane } from "react-icons/rx";
 
 export default function Header() {
   return (
-    <div className="site__heading flex min-h-[60px] w-full items-center justify-between px-8">
+    <div className="site__heading mb-2 mt-2 flex min-h-[60px] w-full flex-col items-center justify-between gap-2 px-8 sm:flex-row">
       <Link href={"/"}>
         <span className="hover:opacity-85 cursor-pointer select-none text-white hover:opacity-75">
           <span className="bold font-bold text-green-400 ">match</span>
