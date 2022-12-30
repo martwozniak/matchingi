@@ -11,6 +11,7 @@ import SpecialOfferBar from "../components/SpecialOfferBar/SpecialOfferBar";
 import Map from "../components/Map/Map";
 import SelectMenu from "../components/SelectMenu/SelectMenu";
 import SingleJobElement from "../components/SingleJobElement/SingleJobElement";
+import BottomCTA from "../components/BottomCTA/BottomCTA";
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
@@ -75,6 +76,7 @@ const Home: NextPage = () => {
             <Map />
           </div>
         </div>
+        <BottomCTA />
       </main>
     </>
   );
