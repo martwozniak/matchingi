@@ -7,7 +7,7 @@ export default function Header() {
     <div className="site__heading flex min-h-[60px] w-full items-center justify-between px-8">
       <Link href={"/"}>
         <span className="hover:opacity-85 cursor-pointer select-none text-white hover:opacity-75">
-          <span className="bold font-bold text-green-400">match</span>
+          <span className="bold font-bold text-green-400 ">match</span>
           ingi
         </span>
       </Link>
