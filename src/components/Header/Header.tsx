@@ -19,12 +19,11 @@ export default function Header() {
           </div>
         </Link>
         <Link href={"/add-offer"}>
-          <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-green-600  px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-500">
+          <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-green-500/50 transition hover:bg-green-500">
             <RxPaperPlane /> {/* RxPlus */}
             <span>
               Add job post for <span className="font-bold">47$</span>
             </span>
-            <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-green-400 opacity-75"></span>
           </div>
         </Link>
       </div>

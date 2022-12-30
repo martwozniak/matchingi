@@ -36,12 +36,6 @@ export default function Filters() {
       <div className="flex cursor-pointer items-center gap-2 rounded-md bg-white/5 px-2 py-2 text-xs font-semibold text-white hover:bg-white/20">
         <TbBuilding /> <span>Rodzaj firmy</span>
       </div>
-      <div className="RemoteSwitch flex items-center justify-center">
-        <span className="flex hidden h-3 w-3 sm:flex">
-          <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-sky-400 opacity-75"></span>
-          <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500"></span>
-        </span>
-      </div>
     </div>
   );
 }
