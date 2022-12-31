@@ -55,6 +55,8 @@ model User {
   image         String?
   accounts      Account[]
   sessions      Session[]
+  companies      Company[]//relation
+  achievments   Achievments[]
 }
 
 model VerificationToken {
@@ -65,7 +67,24 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-
+model Achievments {
+  id           String   @id @default(cuid())
+  name      String   
+  description    String
+  fallowersCount Int // relations with user model
+  companiesCount Int // relations with companies model
+  owner User[]
+  @@unique([id])
+}
+model Company {
+  id           String   @id @default(cuid())
+  name      String   
+  description    String
+  fallowersCount Int // relations with user model
+  companiesCount Int // relations with companies model
+  owners User[]
+  @@unique([id])
+}
 
 model Technology {
   id           String   @id @default(cuid())
