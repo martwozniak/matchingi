@@ -76,3 +76,16 @@ model Technology {
 
   @@unique([id])
 }
+
+model Offer {
+  id           String   @id @default(cuid())
+  name      String   
+  description    String
+  viewCount Int // relations with user model
+  shortLinkCopiedCount Int // relations with companies model
+  // relation to technologies
+  // relation to company 
+  // relation to locations / location lon lat fields
+
+  @@unique([id])
+}

@@ -9,6 +9,11 @@ export default function AddOffer() {
         <div className="container">
           <span className="text-4xl font-bold">Place your order</span>
           <form>
+            <input type="text">Tytuł ogłoszenia</input>
+            <input type="textarea">Opis ogłoszenia</input>
+            <input type="number">Zarobki od</input>
+            <input type="number">Zarobki do</input>
+            <input type="date">Data ważności ogłoszenia</input>
             <input type="checkbox">
               Auto odnawianie <i>wymagane podpięcie karty kredytowej</i>
             </input>
