@@ -8,6 +8,12 @@ export default function AddOffer() {
       <div className="flex min-h-[80px] w-screen w-full items-center justify-center bg-gradient-to-l from-green-300 via-blue-500 to-purple-600 text-white ">
         <div className="container">
           <span className="text-4xl font-bold">Place your order</span>
+          <form>
+            <input type="checkbox">
+              Auto odnawianie <i>wymagane podpięcie karty kredytowej</i>
+            </input>
+            <input type="submit">Place an order</input>
+          </form>
         </div>
       </div>
     </div>
