@@ -73,7 +73,7 @@ model Technology {
   description    String
   fallowersCount Int // relations with user model
   companiesCount Int // relations with companies model
-
+  offers Offer[]
   @@unique([id])
 }
 
@@ -86,6 +86,8 @@ model Offer {
   // relation to technologies
   // relation to company 
   // relation to locations / location lon lat fields
+  technologies Technology @relation(fields: [technologyId], references: [id])
+  technologyId String
 
   @@unique([id])
 }
