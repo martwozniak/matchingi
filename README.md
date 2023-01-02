@@ -1,5 +1,5 @@
 # matchingi 
-![Demo](https://raw.githubusercontent.com/martwozniak/matchingi/master/docs/preview.gif?token=GHSAT0AAAAAAB3UJOZDHL3FOLKCM7NPTZ44Y5S5YIQ)
+![Demo](https://raw.githubusercontent.com/martwozniak/matchingi/master/docs/preview.gif)
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
