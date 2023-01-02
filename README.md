@@ -1,6 +1,22 @@
 # matchingi 
+![Demo](https://raw.githubusercontent.com/martwozniak/matchingi/master/docs/preview.gif?token=GHSAT0AAAAAAB3UJOZDHL3FOLKCM7NPTZ44Y5S5YIQ)
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+
+[Docs](/) | [Demo](https://matchingi.com)
+
+## Features 
+
+[ ] Offers
+[ ] Tech profiles
+[ ] OTP via Stripe
+[ ] Subscriptions via Stripe
+[ ] Administration Area
+[ ] DnD builders via craft.js
+
+
+
+https://bestofjs.org/
 
 ## What's next? How do I make an app with this?
 
