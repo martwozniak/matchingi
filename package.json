@@ -26,6 +26,7 @@
     "@types/maplibre-gl": "^1.14.0",
     "@types/passport": "^1.0.11",
     "@types/passport-google-oauth20": "^2.0.11",
+    "@types/stripe": "^8.0.417",
     "choices.js": "^10.2.0",
     "css-loader": "^6.7.3",
     "mapbox-gl": "^2.11.1",
