@@ -2,7 +2,7 @@ import React from "react";
 import TechnologyCardWithIcon from "../TechnologyCardWithIcon/TechnologyCardWithIcon";
 export default function SelectMenu() {
   return (
-    <div className="bg-grey-700 hidden min-h-[60px] max-w-full sm:flex">
+    <div className="bg-grey-700 hidden min-h-[60px] max-w-full sm:flex mb-2">
       <div className="scroll flex max-w-full overflow-x-scroll scroll-smooth scrollbar scrollbar-none scrollbar-track-gray-900 scrollbar-thumb-gray-800 gap-4">
         <TechnologyCardWithIcon
           icon="react"
@@ -44,16 +44,7 @@ export default function SelectMenu() {
           text="C"
           description="Programming language with more than 6000 companies using it worldwide"
         />
-        <TechnologyCardWithIcon
-          icon="cpp"
-          text="C++"
-          description="Programming language with more than 6000 companies using it worldwide"
-        />
-        <TechnologyCardWithIcon
-          icon="dotnet"
-          text=".NET"
-          description="Programming language with more than 6000 companies using it worldwide"
-        />
+
         <TechnologyCardWithIcon
           icon="wordpress"
           text="WordPress"
