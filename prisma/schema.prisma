@@ -6,8 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  // NOTE: When using postgresql, mysql or sqlserver, uncomment the @db.Text annotations in model Account below
+  provider = "postgresql"
   // Further reading:
   // https://next-auth.js.org/adapters/prisma#create-the-prisma-schema
   // https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#string
@@ -27,12 +26,12 @@ model Account {
   type              String
   provider          String
   providerAccountId String
-  refresh_token     String? // @db.Text
-  access_token      String? // @db.Text
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
   expires_at        Int?
   token_type        String?
   scope             String?
-  id_token          String? // @db.Text
+  id_token          String? @db.Text
   session_state     String?
   user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -48,15 +47,29 @@ model Session {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
-  companies      Company[]//relation
-  achievments   Achievments[]
+  id                       String                    @id @default(cuid())
+  name                     String?
+  email                    String?                   @unique
+  emailVerified            DateTime?
+  image                    String?
+  accounts                 Account[]
+  sessions                 Session[]
+  stripeCustomerId         String? // link to Stripe customer object in Stripe's system
+  stripeSubscriptionId     String? // link to Stripe subscription object for user in Stripe's system
+  stripeSubscriptionStatus StripeSubscriptionStatus? // status of user's subscription to determine access to services
+  companies                Company[] //relation
+  achievments              Achievments[]
+}
+
+// https://stripe.com/docs/api/subscriptions/object#subscription_object-status
+enum StripeSubscriptionStatus {
+  incomplete
+  incomplete_expired
+  trialing
+  active
+  past_due
+  canceled
+  unpaid
 }
 
 model VerificationToken {
@@ -67,46 +80,63 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
+model StripeEvent {
+  id               String   @id @unique
+  api_version      String?
+  data             Json
+  request          Json?
+  type             String
+  object           String
+  account          String?
+  created          DateTime
+  livemode         Boolean
+  pending_webhooks Int
+}
+
 model Achievments {
-  id           String   @id @default(cuid())
-  name      String   
+  id             String @id @default(cuid())
+  name           String
   description    String
   fallowersCount Int // relations with user model
   companiesCount Int // relations with companies model
-  owner User[]
+  owner          User[]
+
   @@unique([id])
 }
+
 model Company {
-  id           String   @id @default(cuid())
-  name      String   
+  id             String @id @default(cuid())
+  name           String
   description    String
   fallowersCount Int // relations with user model
   companiesCount Int // relations with companies model
-  owners User[]
+  owners         User[]
+
   @@unique([id])
 }
 
 model Technology {
-  id           String   @id @default(cuid())
-  name      String   
+  id             String  @id @default(cuid())
+  name           String
   description    String
   fallowersCount Int // relations with user model
   companiesCount Int // relations with companies model
-  offers Offer[]
+  offers         Offer[]
+
   @@unique([id])
 }
 
 model Offer {
-  id           String   @id @default(cuid())
-  name      String   
-  description    String
-  viewCount Int // relations with user model
+  id                   String     @id @default(cuid())
+  name                 String
+  description          String
+  viewCount            Int // relations with user model
   shortLinkCopiedCount Int // relations with companies model
   // relation to technologies
   // relation to company 
   // relation to locations / location lon lat fields
-  technologies Technology @relation(fields: [technologyId], references: [id])
-  technologyId String
+  technologies         Technology @relation(fields: [technologyId], references: [id])
+  technologyId         String
 
   @@unique([id])
 }
