@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex max-h-screen flex-col items-center justify-start  bg-gradient-to-b from-[#140130] to-[#0D0D0D] scrollbar scrollbar-none">
+      <main className="flex max-h-screen h-full flex-col items-center justify-start  bg-gradient-to-b from-black to-[#0D0D0D] ">
         <Header />
 
         <SelectMenu />
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
           <div className="__filters hidden w-full">
             <Filters />
           </div>
-          <div className="__offers h=full max-h-screen w-full overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-gray-800">
+          <div className="__offers h-full max-h-[85vh] w-full overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-black scrollbar-thumb-gray-900">
             <Filters />
             <SingleJobElement />
             <SingleJobElement />
