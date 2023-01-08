@@ -1,5 +1,8 @@
 name: Build Next.js web application
-on: push
+on: 
+  push:
+    branches:
+      - master
 jobs:
   build-project:
     name: Build project
