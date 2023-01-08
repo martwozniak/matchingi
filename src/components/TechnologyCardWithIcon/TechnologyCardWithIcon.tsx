@@ -23,7 +23,7 @@ export default function TechnologyCardWithIcon({
         </HoverCard.Trigger>
         <HoverCard.Portal>
           <HoverCard.Content className="HoverCardContent" sideOffset={5}>
-            <div className="flex max-w-sm flex-col items-start gap-2 bg-black/90 p-8 text-white opacity-80 backdrop-blur-lg radius-md">
+            <div className="flex max-w-sm flex-col items-start rounded-xl gap-2 bg-black/90 p-8 text-white opacity-80 backdrop-blur-lg radius-md">
               <img className="max-w-[50px]" src={iconPath} alt={text} />
               <div className="flex flex-col gap-2">
                 <div>
