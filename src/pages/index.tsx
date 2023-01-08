@@ -49,6 +49,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex max-h-screen flex-col items-center justify-start  bg-gradient-to-b from-[#140130] to-[#0D0D0D] scrollbar scrollbar-none">
         <Header />
+
         <SelectMenu />
         {/*  
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
@@ -61,6 +62,7 @@ const Home: NextPage = () => {
             <Filters />
             <SingleJobElement />
             <SingleJobElement />
+            <span>{t("this-stack-uses")}</span>
             <SingleJobElement />
             <SingleJobElement />
             <SingleJobElement />
