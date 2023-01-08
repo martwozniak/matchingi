@@ -1,6 +1,9 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/react";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nConfig from "../../next-i18next.config.mjs";
 
 import { trpc } from "../utils/trpc";
 import { useRouter } from "next/router";
@@ -13,10 +16,24 @@ import SelectMenu from "../components/SelectMenu/SelectMenu";
 import SingleJobElement from "../components/SingleJobElement/SingleJobElement";
 import BottomCTA from "../components/BottomCTA/BottomCTA";
 
+
+export const getServerSideProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"], nextI18nConfig, [
+      "en",
+      "pl",
+    ])),
+  },
+});
+
+
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
   const { locale, locales, defaultLocale } = useRouter();
   console.log(locale, locales, defaultLocale);
+
+  const { t } = useTranslation("common");
+
   return (
     <>
       <Head>
