@@ -1,8 +1,14 @@
 import Link from "next/link";
 import React from "react";
 import { RxPinRight, RxPlus, RxPaperPlane } from "react-icons/rx";
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const { status } = useSession();
+  const { push } = useRouter();
+
+
   return (
     <div className="site__heading mb-2 mt-2 flex min-h-[60px] w-full flex-col items-center justify-between gap-2 px-8 sm:flex-row">
       <Link href={"/"}>
@@ -14,7 +20,14 @@ export default function Header() {
 
       <div className="flex gap-4">
         <Link href={"/login"}>
-          <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md bg-gray-600/60 px-4 py-2  text-sm font-semibold text-white transition hover:bg-gray-600/70">
+          <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md bg-gray-600/60 px-4 py-2  text-sm font-semibold text-white transition hover:bg-gray-600/70" onClick={() => {
+            if (status === "unauthenticated") {
+              signIn("discord", { callbackUrl: "/dashboard" });
+            } else if (status === "authenticated") {
+              push("/dashboard");
+            }
+          }}
+          >
             <RxPinRight /> <span>Log in</span>
           </div>
         </Link>
