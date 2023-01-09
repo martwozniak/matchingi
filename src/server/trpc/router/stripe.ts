@@ -4,6 +4,7 @@ import { router, protectedProcedure } from "../trpc";
 
 export const stripeRouter = router({
     createCheckoutSession: protectedProcedure.mutation(async ({ ctx }) => {
+
         const { stripe, session, prisma, req } = ctx;
 
         const customerId = await getOrCreateStripeCustomerIdForUser({
