@@ -12,9 +12,24 @@ export default function TechnologyCardWithIcon({
   text,
   description,
 }: Props) {
+
+  // TODO: Change to value from database
   const iconPath = "/img/icons/" + icon + "/" + icon + "-original.svg";
+
+
+  const handleClick = (event: any) => {
+    // 👇️ toggle class on click
+    event.currentTarget.classList.toggle('opacity-100');
+
+    // 👇️ add class on click
+    // event.currentTarget.classList.add('bg-salmon');
+
+    // 👇️ remove class on click
+    // event.currentTarget.classList.remove('bg-salmon');
+  };
+
   return (
-    <div className="mx-4 flex min-w-[32px] cursor-pointer flex-col items-center justify-center gap-1 py-2 text-white hover:opacity-75 ">
+    <div className="mx-4 flex min-w-[32px] min-h-[32px]  cursor-pointer flex-col items-center justify-center gap-1 py-2 text-white opacity-60 hover:opacity-100" onClick={handleClick}>
       <HoverCard.Root>
         <HoverCard.Trigger asChild>
           <div className="bg-white/10 rounded-full p-2 min-h-[52px] min-w-[52px] flex items-center justify-center ">
@@ -23,7 +38,7 @@ export default function TechnologyCardWithIcon({
         </HoverCard.Trigger>
         <HoverCard.Portal>
           <HoverCard.Content className="HoverCardContent" sideOffset={5}>
-            <div className="flex max-w-sm flex-col items-start gap-2 bg-black/90 p-8 text-white opacity-80 backdrop-blur-lg radius-md">
+            <div className="flex max-w-sm flex-col items-start rounded-xl gap-2 bg-black/90 p-8 text-white opacity-80 backdrop-blur-lg radius-md">
               <img className="max-w-[50px]" src={iconPath} alt={text} />
               <div className="flex flex-col gap-2">
                 <div>

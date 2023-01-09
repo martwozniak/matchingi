@@ -49,7 +49,6 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex max-h-screen h-full flex-col items-center justify-start  bg-gradient-to-b from-black to-[#0D0D0D] ">
         <Header />
-
         <SelectMenu />
         {/*  
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
