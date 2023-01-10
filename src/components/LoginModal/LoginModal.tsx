@@ -12,10 +12,12 @@ import {
 } from 'baseui/modal';
 import { RxPinRight } from 'react-icons/rx';
 import { KIND as ButtonKind } from "baseui/button";
+import { useTranslation } from 'next-i18next';
 
 export default function LoginModal() {
     const [isOpen, setOpen] = React.useState(false);
     let isItHidden = isOpen ? "" : "hidden";
+    const { t } = useTranslation("common");
     return (
         <React.Fragment>
 
@@ -24,7 +26,7 @@ export default function LoginModal() {
                     <div className='text-white transition-all h-full flex justify-center items-center'>
                         <div className='bg-gray-900 transition-all px-4 py-2 min-h-[760px] min-w-[520px]'>
                             <div className='__top_of_modal flex justify-between items-center'>
-                                <span>Choose your login method</span>
+                                <span>{t("page.login.title")}</span>
                                 <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
                             </div>
                         </div>
