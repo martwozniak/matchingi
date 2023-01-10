@@ -15,7 +15,7 @@ import { KIND as ButtonKind } from "baseui/button";
 
 export default function LoginModal() {
     const [isOpen, setOpen] = React.useState(false);
-    let isItHidden = isOpen ? "hidden" : "";
+    let isItHidden = isOpen ? "" : "hidden";
     return (
         <React.Fragment>
 

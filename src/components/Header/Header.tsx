@@ -13,10 +13,11 @@ export default function Header() {
   return (
     <div className="site__heading mb-2 pb-4 mt-2 flex min-h-[70px] sm:min-h-[60px] w-full flex-col items-center justify-between gap-2 px-8 sm:flex-row">
       <Link href={"/"}>
-        <span className="hover:opacity-85 cursor-pointer select-none text-white hover:opacity-75">
+        {/* <span className="hover:opacity-85 cursor-pointer select-none text-white hover:opacity-75">
           <span className="bold font-bold text-green-400 ">match</span>
           ingi
-        </span>
+        </span> */}
+        <img src="/img/logo.svg" alt="Logo" className="max-h-[46px]" />
       </Link>
 
       <div className="flex gap-4">
