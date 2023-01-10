@@ -22,9 +22,9 @@ export default function LoginModal() {
             <div className={isItHidden}>
                 <div className='w-screen h-screen transition-all max-h-screen bg-black/70 z-50 absolute top-0 left-0'>
                     <div className='text-white transition-all h-full flex justify-center items-center'>
-                        <div className='bg-red-500 transition-all px-4 py-2 min-h-[760px] min-w-[520px]'>
-                            <div className='__top_of_modal flex justify-between'>
-                                <span>This is modal content</span>
+                        <div className='bg-gray-900 transition-all px-4 py-2 min-h-[760px] min-w-[520px]'>
+                            <div className='__top_of_modal flex justify-between items-center'>
+                                <span>Choose your login method</span>
                                 <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
                             </div>
                         </div>
