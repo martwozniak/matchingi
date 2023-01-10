@@ -35,14 +35,21 @@ export default function Map() {
       center: [lng, lat],
       zoom: zoom,
     });
+    map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
+    new maplibregl.Marker({ color: "#FF0000" })
+      .setLngLat([139.7525, 35.6846])
+      .addTo(map.current);
   });
+
   // ! TODO: Change height of the website in normal way
   return (
     <div className="map-wrap h-full ">
       <div
         ref={mapContainer}
         className="map-container max-h-80vh max-w-screen h-[95vh] w-full w-[50vw]"
-      ></div>
+      >
+
+      </div>
     </div>
   );
 }
