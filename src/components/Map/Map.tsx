@@ -36,9 +36,21 @@ export default function Map() {
       zoom: zoom,
     });
     map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
+
     new maplibregl.Marker({ color: "#FF0000" })
       .setLngLat([139.7525, 35.6846])
       .addTo(map.current);
+
+    map.current.addSource('earthquakes', {
+      type: 'geojson',
+      // Point to GeoJSON data. This example visualizes all M1.0+ earthquakes
+      // from 12/22/15 to 1/21/16 as logged by USGS' Earthquake hazards program.
+      data:
+        'https://maplibre.org/maplibre-gl-js-docs/assets/earthquakes.geojson',
+      cluster: true,
+      clusterMaxZoom: 50, // Max zoom to cluster points on
+      clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+    });
   });
 
   // ! TODO: Change height of the website in normal way
