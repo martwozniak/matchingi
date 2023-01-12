@@ -19,7 +19,7 @@ import { TbDoorEnter, TbRegistered } from 'react-icons/tb';
 
 export default function LoginModal() {
     const [isOpen, setOpen] = React.useState(false);
-    let isItHidden = isOpen ? "" : "hidden";
+    const isItHidden = isOpen ? "" : "hidden";
     const { t } = useTranslation("common");
 
     function onFormSubmit(event: any) {
