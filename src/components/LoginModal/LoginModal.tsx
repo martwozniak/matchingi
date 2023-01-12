@@ -36,6 +36,7 @@ export default function LoginModal() {
     }
 
 
+
     return (
         <React.Fragment>
 
@@ -96,8 +97,9 @@ export default function LoginModal() {
                                     <span>Add job post for 47$ (without login)</span>
                                 </div>
                             </div>
-                            <div className='flex items-center justify-center mt-4 text-xs max-w-xl'>
-                                <div className='text-white/60 mx-4'><span className='font-bold'>Uwaga</span>: Pamiętaj, aby dokładnie sprawdzić dane dot. zamówienia. Na Twój adres e-mail wyślemy specjalny link pozwalający na edycję ogłoszenia. Dlatego upewnij się, że adres e-mail jest poprawny.</div>
+                            <div className='flex items-center justify-center mt-4 text-xs max-w-xl flex-col gap-2'>
+                                <div className='text-white/60 mx-4'><span className='font-bold'>Uwaga</span>: Pamiętaj, aby dokładnie sprawdzić dane dot. zamówienia. Na Twój adres e-mail wyślemy specjalny link pozwalający na edycję ogłoszenia. Dlatego upewnij się, że adres e-mail jest poprawny. Po opłaceniu zamówienia na Twój e-mail wyślemy link do edycji zamówienia (Sprawdź również folder SPAM w swojej skrzynce pocztowej)</div>
+                                <div className='text-white/30 mx-4'>Korzystając z serwisu wyrażasz zgodę na RODO, TOS oraz Cookies</div>
                             </div>
 
                         </div>
