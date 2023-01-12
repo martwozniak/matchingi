@@ -17,7 +17,7 @@ export default function Header() {
           <span className="bold font-bold text-green-400 ">match</span>
           ingi
         </span> */}
-        <img src="/img/logo.svg" alt="Logo" className="max-h-[46px]" />
+        <img src="/img/logo_4_white.svg" alt="Logo" className="max-h-[46px]" />
       </Link>
 
       <div className="flex gap-4">
