@@ -140,3 +140,21 @@ model Offer {
 
   @@unique([id])
 }
+
+model Resume {
+  id                   String @id @default(cuid())
+  name                 String
+  description          String
+  viewCount            Int // relations with user model
+  shortLinkCopiedCount Int // relations with companies model
+
+  // One candidate can have more than one Resumes
+  // Resume_Style = "string"
+  // relation to technologies
+  // relation to company 
+  // relation to locations / location lon lat fields
+  //technologies         Technology @relation(fields: [technologyId], references: [id])
+  //technologyId         String
+
+  @@unique([id])
+}

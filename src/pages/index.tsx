@@ -16,6 +16,8 @@ import SelectMenu from "../components/SelectMenu/SelectMenu";
 import SingleJobElement from "../components/SingleJobElement/SingleJobElement";
 import BottomCTA from "../components/BottomCTA/BottomCTA";
 
+import SpecialOffer from "../components/SpecialOfferInJobList/SpecialOffer";
+
 
 export const getServerSideProps = async ({ locale }: { locale: string }) => ({
   props: {
@@ -57,7 +59,7 @@ const Home: NextPage = () => {
           <div className="__filters hidden w-full">
             <Filters />
           </div>
-          <div className="__offers h-full max-h-[85vh] w-full overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-black scrollbar-thumb-gray-900">
+          <div className="__offers h-full max-h-screen sm:max-h-[85vh] w-full overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-black scrollbar-thumb-gray-900">
             <Filters />
             <SingleJobElement />
             <SingleJobElement />
@@ -67,6 +69,7 @@ const Home: NextPage = () => {
             <SingleJobElement />
             <SingleJobElement />
             <SingleJobElement />
+            <SpecialOffer />
             <SingleJobElement />
             <SingleJobElement />
             <SingleJobElement />
