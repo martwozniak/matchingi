@@ -17,6 +17,7 @@ import SingleJobElement from "../components/SingleJobElement/SingleJobElement";
 import BottomCTA from "../components/BottomCTA/BottomCTA";
 
 import SpecialOffer from "../components/SpecialOfferInJobList/SpecialOffer";
+import Searchbar from "../components/Searchbar/Searchbar";
 
 
 export const getServerSideProps = async ({ locale }: { locale: string }) => ({
@@ -51,7 +52,11 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex max-h-screen h-full flex-col items-center justify-start  bg-gradient-to-b from-black to-[#0D0D0D] ">
         <Header />
-        <SelectMenu />
+        <div className="flex gap-2 items-center">
+          <Searchbar />
+          <SelectMenu />
+        </div>
+
         {/*  
         <SpecialOfferBar prompt="Special christmas offer" discount={20} />
         */}
