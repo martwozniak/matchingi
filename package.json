@@ -36,6 +36,7 @@
     "css-loader": "^6.7.3",
     "i18next": "^22.4.8",
     "i18next-resources-to-backend": "^1.1.1",
+    "jotai": "^1.13.0",
     "mapbox-gl": "^2.11.1",
     "maplibre-gl": "^2.4.0",
     "micro": "^10.0.1",
