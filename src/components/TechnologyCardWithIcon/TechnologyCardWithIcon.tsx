@@ -26,7 +26,7 @@ export default function TechnologyCardWithIcon({
 
     event.currentTarget.classList.toggle('border-2');
     event.currentTarget.classList.toggle('border-green-500');
-    event.currentTarget.classList.toggle('bg-white/20');
+    event.currentTarget.classList.toggle('bg-gray-600/60');
     // 👇️ add class on click
     // event.currentTarget.classList.add('bg-salmon');
 
