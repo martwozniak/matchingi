@@ -15,7 +15,7 @@ export default function SingleJobElement() {
   }
 
   return (
-    <div className="mx-2 my-2 flex cursor-pointer justify-between rounded-md bg-white/10 py-3 px-3 text-xs text-white hover:bg-white/20">
+    <div className="mx-4 my-2 flex cursor-pointer justify-between rounded-md transition-all border border-gray-600/20 bg-gray-600/10 py-3 px-3 text-xs text-white hover:bg-gray-600/20">
       <div className="flex flex-row gap-2">
         <div className="flex items-center justify-center">
           <img
