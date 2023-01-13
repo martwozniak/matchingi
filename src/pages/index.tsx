@@ -50,9 +50,9 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex max-h-screen h-full flex-col items-center justify-start  bg-gradient-to-b from-black to-[#0D0D0D] ">
+      <main className="flex max-h-screen h-full flex-col items-center justify-start  bg-gradient-to-b from-black to-[#0D0D0D] overflow-x-none">
         <Header />
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center w-screen mt-6 sm:mt-0 max-w-screen">
           <Searchbar />
           <SelectMenu />
         </div>

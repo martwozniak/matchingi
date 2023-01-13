@@ -17,7 +17,7 @@ export default function Filters() {
   }
 
   return (
-    <div className="flex flex-row justify-between overflow-hidden rounded-md   py-2 text-xs text-white sm:flex-row ">
+    <div className="flex flex-col sm:flex-row justify-between overflow-hidden rounded-md   py-2 text-xs text-white sm:flex-row ">
       <div
         onClick={extendFilterBox}
         className='text-white py-2 min-w-[220px] px-4 border border-white/10 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer bg-transparent w-full transition-all items-center hover:border-white/20'
