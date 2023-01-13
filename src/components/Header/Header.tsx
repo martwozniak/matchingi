@@ -4,6 +4,7 @@ import { RxPinRight, RxPlus, RxPaperPlane } from "react-icons/rx";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import LoginModal from "../LoginModal/LoginModal";
+import MegaMenu from "../MegaMenu/MegaMenu";
 
 export default function Header() {
   const { status } = useSession();
@@ -12,13 +13,17 @@ export default function Header() {
 
   return (
     <div className="site__heading mt-2 flex min-h-[70px] sm:min-h-[60px] w-full flex-col items-center justify-between gap-2 px-8 sm:flex-row">
-      <Link href={"/"}>
-        {/* <span className="hover:opacity-85 cursor-pointer select-none text-white hover:opacity-75">
+      <div className="flex gap-4 items-center align-center">
+        <Link href={"/"}>
+          {/* <span className="hover:opacity-85 cursor-pointer select-none text-white hover:opacity-75">
           <span className="bold font-bold text-green-400 ">match</span>
           ingi
         </span> */}
-        <img src="/img/logo_4_white.svg" alt="Logo" className="max-h-[46px]" />
-      </Link>
+          <img src="/img/logo_4_white.svg" alt="Logo" className="max-h-[46px]" />
+        </Link>
+        <MegaMenu />
+      </div>
+
 
       <div className="flex gap-4">
         {/* 
