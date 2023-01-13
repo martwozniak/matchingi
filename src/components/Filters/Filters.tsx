@@ -17,23 +17,23 @@ export default function Filters() {
   }
 
   return (
-    <div className="mx-2 my-2 flex flex-row justify-between overflow-hidden rounded-md   py-2 text-xs text-white sm:flex-row ">
+    <div className="flex flex-col sm:flex-row justify-between overflow-hidden rounded-md   py-2 text-xs text-white sm:flex-row ">
       <div
         onClick={extendFilterBox}
-        className="flex w-full cursor-pointer items-center justify-center gap-2  rounded-md bg-white/5 py-2 text-xs font-semibold text-white hover:bg-white/20"
+        className='text-white py-2 min-w-[220px] px-4 border border-white/10 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer bg-transparent w-full transition-all items-center hover:border-white/20'
       >
         <TbReportMoney /> <span>Zarobki</span>
       </div>
-      <div className="flex w-full cursor-pointer items-center justify-center gap-2  rounded-md bg-white/5 py-2 text-xs font-semibold text-white hover:bg-white/20">
+      <div className='text-white py-2 min-w-[220px] px-4 border border-white/10 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer bg-transparent w-full transition-all items-center hover:border-white/20'>
         <TbHierarchy /> <span>Pozycja</span>
       </div>
-      <div className="flex w-full cursor-pointer items-center justify-center gap-2  rounded-md  bg-white/5  py-2 text-xs font-semibold text-white hover:bg-white/20">
+      <div className='text-white py-2 min-w-[220px] px-4 border border-white/10 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer bg-transparent w-full transition-all items-center hover:border-white/20'>
         <TbHourglassLow /> <span>Doświadczenie</span>
       </div>
-      <div className="flex w-full cursor-pointer items-center justify-center gap-2  rounded-md  bg-white/5 py-2 text-xs font-semibold text-white hover:bg-white/20">
+      <div className='text-white py-2 min-w-[220px] px-4 border border-white/10 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer bg-transparent w-full transition-all items-center hover:border-white/20'>
         <TbCurrentLocation /> <span>Lokalizacja</span>
       </div>
-      <div className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-md  bg-white/5  py-2 text-xs font-semibold text-white hover:bg-white/20">
+      <div className='text-white py-2 min-w-[220px] px-4 border border-white/10 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer bg-transparent w-full transition-all items-center hover:border-white/20'>
         <TbBuilding /> <span>Rodzaj firmy</span>
       </div>
     </div>
