@@ -9,9 +9,13 @@ export default function Plans() {
             <div className="container">
                 <span className="text-2xl font-bold">Plans</span>
             </div>
-            <span>Paid plans for app Starter, Startup / Business / Enterprise</span>
+        </div>
+
+        <div className="text-white mt-2 text-xs flex items-start justify-start flex-start container">
+            <span>Paid plans for app Starter, Startup Business Enterprise</span>
             <span>And subscription</span>
         </div>
 
     </div>;
 }
+
