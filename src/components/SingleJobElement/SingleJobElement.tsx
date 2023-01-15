@@ -8,9 +8,15 @@ import {
   RxLetterCaseCapitalize,
 } from "react-icons/rx";
 import { useTranslation } from 'next-i18next';
-export default function SingleJobElement() {
 
+import FileUploaderComponent from "../FileUploaderComponent/FileUploaderComponent";
+
+
+
+export default function SingleJobElement() {
   const [isOpen, setOpen] = React.useState(false);
+  const [errorMessage, setErrorMessage] = React.useState("Error");
+
   const isItHidden = isOpen ? "" : "hidden";
   const { t } = useTranslation("common");
 
@@ -35,6 +41,10 @@ export default function SingleJobElement() {
                 <span>Podgląd oferty pracy</span>
 
                 <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
+              </div>
+
+              <div>
+                <FileUploaderComponent />
               </div>
 
               <div className='register_button mt-4'>
