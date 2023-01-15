@@ -30,7 +30,7 @@ export default function SingleJobElement() {
       <div className={isItHidden}>
         <div className='w-screen h-screen transition-all max-h-screen bg-black/70 z-50 absolute top-0 left-0'>
           <div className='text-white transition-all h-full flex justify-center items-center'>
-            <div className='bg-gray-900 transition-all px-4 py-2 min-h-[760px] min-w-[220px] sm:min-w-[520px]'>
+            <div className='bg-gray-900 transition-all px-4 py-2 min-h-[760px] min-w-[220px] sm:min-w-[80vw]'>
               <div className='__top_of_modal flex justify-between items-center'>
                 <span>Podgląd oferty pracy</span>
 
@@ -38,20 +38,20 @@ export default function SingleJobElement() {
               </div>
 
               <div className='register_button mt-4'>
-                <div className='button_ p-4 border border-white/10 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer hover:bg-white/10 transition-all items-center'>
+                <div className='button_ p-4 border border-white/10 bg-green-500/60 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer hover:bg-green-500/80 transition-all items-center'>
                   <div>
                     <RxCrosshair2 />
                   </div>
                   <div>Apply </div>
                 </div>
               </div>
-              <div className='flex items-center justify-center mt-4 text-xs'>
-                <span className='text-white/60'>lub zamów ogłoszenie bez logowania</span>
-              </div>
 
-              <div className='flex items-center justify-center mt-4 text-xs max-w-xl flex-col gap-2'>
-                <div className='text-white/60 mx-4'><span className='font-bold'>Uwaga</span>: Pamiętaj, aby dokładnie sprawdzić dane dot. zamówienia. Na Twój adres e-mail wyślemy specjalny link pozwalający na edycję ogłoszenia. Dlatego upewnij się, że adres e-mail jest poprawny. Po opłaceniu zamówienia na Twój e-mail wyślemy link do edycji zamówienia (Sprawdź również folder SPAM w swojej skrzynce pocztowej)</div>
-                <div className='text-white/30 mx-4'>Korzystając z serwisu wyrażasz zgodę na RODO, TOS oraz Cookies</div>
+
+              <div className='flex items-center justify-center mt-4 text-xs flex-col gap-2'>
+                <div className="max-w-5xl flex">
+                  <div className='text-white/60 mx-4'><span className='font-bold'>Uwaga</span>: Przesyłając dane z wykorzystaniem powyższego kwestionariusza oświadczasz że zapoznałeś się z RODO / GDPR i wyrażasz zgodę na przetwarzanie Twoich danych w celu przeprowadzenia procesu rekrutacyjnego w firmie FasFSol Sp. z o.o</div>
+                  <div className='text-white/30 mx-4 flex items-center justify-center'>Korzystając z serwisu wyrażasz zgodę na RODO, TOS oraz Cookies</div>
+                </div>
               </div>
 
             </div>
