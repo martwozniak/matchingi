@@ -38,9 +38,81 @@ export default function SingleJobElement() {
           <div className='text-white transition-all h-full flex justify-center items-center'>
             <div className='bg-gray-900 transition-all px-4 py-2 min-h-[760px] min-w-[220px] sm:min-w-[80vw]'>
               <div className='__top_of_modal flex justify-between items-center'>
-                <span>Podgląd oferty pracy </span>
+                <span className="px-4">Podgląd oferty pracy </span>
 
                 <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
+              </div>
+              <div className="mx-4">
+                <div className="flex flex-row justify-between">
+                  <div className="flex">
+                    <div>
+                      <div>
+                        <strong>Senior Java Software Engineer</strong>
+                      </div>
+
+                      <div className="flex gap-2 pt-2">
+                        <div className="flex items-center justify-center gap-2">
+                          <RxCrosshair2 />
+                          <span>Warsaw</span>
+                        </div>
+                        <div className="flex items-center justify-center gap-2">
+                          <RxLapTimer />
+                          <span>Senior</span>
+                        </div>
+                        <div className="flex items-center justify-center gap-2">
+                          <RxBackpack />
+                          <span>B2B {/* / UOP / UZ / UOD */}</span>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-2 pt-2">
+                        <div className="rounded-md bg-black p-2 hover:opacity-75">
+                          Redis
+                        </div>
+                        <div className="rounded-md bg-black p-2 hover:opacity-75">
+                          Postgres
+                        </div>
+                        <div className="rounded-md bg-black p-2 hover:opacity-75">SQL</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="">
+                    <img
+                      src="/img/icons/react/react-original.svg"
+                      alt="Company name logo"
+                      className="h-[64px] max-h-[64px] w-[64px] max-w-[64px]"
+                    />
+                  </div>
+
+                </div>
+
+                <div className="flex gap-2 pt-2 flex-col max-w-5xl">
+                  <span>Description:</span>
+                  <span>
+                    We are seeking a Senior Java Software Engineer to join our dynamic team. In this role, you will be responsible for designing, developing and maintaining our Java-based applications.
+                    <br />  <br />
+                    Responsibilities:  <br />
+
+                    Design, develop and maintain Java-based applications  <br />
+                    Collaborate with cross-functional teams to define, design, and ship new features  <br />
+                    Participate in code reviews, ensuring adherence to coding standards and best practices  <br />
+                    Troubleshoot and debug production issues  <br />
+                    Continuously discover, evaluate, and implement new technologies to maximize development efficiency  <br />
+                    <br />
+                    Requirements:  <br />
+
+                    Strong experience with Java, Spring, and Hibernate  <br />
+                    Experience with web development frameworks such as AngularJS or React  <br />
+                    Strong understanding of software development principles and design patterns  <br />
+                    Experience with Agile methodologies and test-driven development  <br />
+                    Ability to work independently and as part of a team  <br />
+                    Bachelor's degree in Computer Science or related field  <br />
+                    Minimum of 5 years of experience in software development  <br />
+                    This is a full-time position with competitive salary and benefits package. If you are a highly motivated individual with a passion for software development, we would love to hear from you!  <br />
+                  </span>
+                </div>
+
               </div>
 
               <div>
@@ -128,6 +200,6 @@ export default function SingleJobElement() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
