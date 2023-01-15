@@ -6,14 +6,14 @@ import '@splidejs/react-splide/css';
 export default function SelectMenu() {
 
   return (
-    <div className=" bg-grey-700 hidden min-h-[60px] max-w-full sm:flex mb-2">
+    <div className=" bg-grey-700 hidden min-h-[60px] max-w-full sm:flex mb-2 overflow-hidden">
       <div> {/*className="scroll flex max-w-full overflow-x-scroll scroll-smooth scrollbar scrollbar-none scrollbar-track-gray-900 scrollbar-thumb-gray-800 gap-4"*/}
 
-        <Splide aria-label="My Favorite Images" className=" gap-2" options={{
+        <Splide aria-label="My Favorite Images" className="max-w-full overflow-hidden" options={{
           rewind: true,
           perPage: 20,
-          width: 1280,
-          gap: '1rem',
+          width: 'full',
+          gap: '0',
           arrows: false,
           pagination: false,
           lazyLoad: true,
