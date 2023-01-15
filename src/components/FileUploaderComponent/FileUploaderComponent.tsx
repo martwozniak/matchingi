@@ -15,7 +15,7 @@ export default function FileUploaderComponent() {
         timeoutId.current = setTimeout(reset, 4000);
     }
     return (
-        <div className='button_ p-4 border border-white/10 border-dashed  rounded-lg justify-center mx-4 flex gap-4 cursor-pointer hover:bg-gray-500/10 transition-all items-center'>
+        <div className='button_ p-4 border-white/10 border-dashed border-2 rounded-lg justify-center mt-4 flex gap-4 cursor-pointer hover:bg-gray-500/10 transition-all items-center'>
             <FileUploader
                 onCancel={reset}
                 onDrop={(acceptedFiles, rejectedFiles) => {
@@ -26,6 +26,7 @@ export default function FileUploaderComponent() {
                 progressMessage={
                     isUploading ? `Uploading... hang tight.` : ''
                 }
+
             /></div>
     );
 }

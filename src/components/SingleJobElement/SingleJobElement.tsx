@@ -38,13 +38,19 @@ export default function SingleJobElement() {
           <div className='text-white transition-all h-full flex justify-center items-center'>
             <div className='bg-gray-900 transition-all px-4 py-2 min-h-[760px] min-w-[220px] sm:min-w-[80vw]'>
               <div className='__top_of_modal flex justify-between items-center'>
-                <span>Podgląd oferty pracy</span>
+                <span>Podgląd oferty pracy </span>
 
                 <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
               </div>
 
               <div>
-                <FileUploaderComponent />
+                <form className='flex flex-col gap-2 my-6 mx-4' onSubmit={onFormSubmit}>
+                  <input type={'text'} placeholder='Imię i nazwisko' name="dane" className='p-4 border border-white/10 rounded-lg bg-transparent transition-all' />
+                  <input type={'text'} placeholder='Adres e-mail' name="email" className='p-4 border border-white/10 rounded-lg bg-transparent transition-all' />
+                  <input type={'textarea'} placeholder='Dodatkowe uwagi do ogłoszenia' name="opis" className='p-4 border border-white/10 rounded-lg bg-transparent transition-all' />
+                  <FileUploaderComponent />
+
+                </form>
               </div>
 
               <div className='register_button mt-4'>
