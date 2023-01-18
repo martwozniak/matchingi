@@ -14,6 +14,7 @@ import { RxDotsHorizontal, RxPinRight } from 'react-icons/rx';
 import { KIND as ButtonKind } from "baseui/button";
 import { useTranslation } from 'next-i18next';
 import { TbDoorEnter, TbRegistered } from 'react-icons/tb';
+import Link from 'next/link';
 
 
 
@@ -46,8 +47,10 @@ export default function LoginModal() {
                         <div className='bg-gray-900 transition-all px-4 py-2 min-h-[760px] min-w-[220px] sm:min-w-[520px]'>
                             <div className='__top_of_modal flex justify-between items-center'>
                                 <span>{t("page.login.title")}</span>
+                                <Link href="/" as="/">
+                                    <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
+                                </Link>
 
-                                <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
                             </div>
 
                             <div className='flex gap-4 justify-center mt-6 mx-4'>
@@ -106,11 +109,12 @@ export default function LoginModal() {
                     </div>
                 </div>
             </div>
-            <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md bg-gray-600/60 px-4 py-2  text-sm font-semibold text-white transition hover:bg-gray-600/70"
-                onClick={() => setOpen(s => !s)}
-            >
-                <RxPinRight /> <span>Log in</span>
-            </div>
+            <Link href="?login" as="/login">
+                <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md bg-gray-600/60 px-4 py-2  text-sm font-semibold text-white transition hover:bg-gray-600/70"
+                    onClick={() => setOpen(s => !s)}
+                >
+                    <RxPinRight /> <span>Log in</span>
+                </div></Link>
         </React.Fragment >
     );
 }

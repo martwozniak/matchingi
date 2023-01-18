@@ -14,6 +14,7 @@ import { RxDotsHorizontal, RxPaperPlane, RxPinRight } from 'react-icons/rx';
 import { KIND as ButtonKind } from "baseui/button";
 import { useTranslation } from 'next-i18next';
 import { TbDoorEnter, TbRegistered } from 'react-icons/tb';
+import Link from 'next/link';
 
 
 
@@ -48,7 +49,9 @@ export default function AddJobModal() {
                                 <div className='__top_of_modal flex justify-between items-center'>
                                     <span>{t("page.login.title")}</span>
 
-                                    <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
+                                    <Link href="/" as="/">
+                                        <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
+                                    </Link>
                                 </div>
 
                                 <div className='flex gap-4 justify-center mt-6 mx-4'>
@@ -123,14 +126,15 @@ export default function AddJobModal() {
                     </div>
                 </div>
             </div>
-
-            <div className="floating-buy-button-container hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-lg  transition hover:bg-green-500"
-                onClick={() => setOpen(s => !s)}>
-                <RxPaperPlane /> {/* RxPlus */}
-                <span>
-                    Add job post for <span className="font-bold">47$</span>
-                </span>
-            </div>
+            <Link href={"/?addJobOffer"} as="/add-job-offer">
+                <div className="floating-buy-button-container hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-lg  transition hover:bg-green-500"
+                    onClick={() => setOpen(s => !s)}>
+                    <RxPaperPlane /> {/* RxPlus */}
+                    <span>
+                        Add job post for <span className="font-bold">47$</span>
+                    </span>
+                </div>
+            </Link>
 
         </React.Fragment >
     );
