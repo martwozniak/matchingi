@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    transition: all 150ms ease;
-}
-
-body {
-    transition: all 150ms ease;
-}
-
 .floating-buy-button-container {
 
 
