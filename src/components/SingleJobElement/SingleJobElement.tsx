@@ -197,7 +197,6 @@ export default function SingleJobElement() {
             </div>
             <div className="flex items-center justify-between">
               <div
-                onClick={showRegisterPopup}
                 className="flex w-full items-center justify-center gap-4 rounded-md bg-green-600 py-2 px-2 transition hover:bg-green-500"
               >
                 <RxPaperPlane /> <span>Fast apply</span>
