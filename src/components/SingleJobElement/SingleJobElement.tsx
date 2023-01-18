@@ -41,7 +41,10 @@ export default function SingleJobElement() {
               <div className='__top_of_modal flex justify-between items-center'>
                 <span className="px-4">Podgląd oferty pracy </span>
 
-                <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
+                <Link href="/" as="/">
+                  <div className='closeButton cursor-pointer px-4 py-2' onClick={() => setOpen(s => !s)}>X</div>
+                </Link>
+
               </div>
               <div className="mx-4">
                 <div className="flex flex-row justify-between">
