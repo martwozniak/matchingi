@@ -105,10 +105,15 @@ export default function AddJobModal() {
                             </div>
                             <div className='calculator flex flex-col justify-between bg-blue-500 p-4 mt-[-2rem] rounded-md mb-[-2rem] min-w-[320px] pr-2 mr-[-2rem]'>
                                 <div className='up'>
-                                    <span className='font-bold'>Final price estimation</span>
+                                    <span className='font-bold'>Your order</span>
                                 </div>
-                                <div className='down flex items-center justify-center border p-4 rounded-md w-full  cursor-pointer hover:bg-white hover:text-blue-500 transition-all'>
-                                    <span className='font-bold'>BUY NOW FOR 47$</span>
+                                <div className='down flex gap-2 flex-col'>
+                                    <div>
+                                        <div className='w-full bg-blue-800/30 rounded-md p-2 text-xs text-gray-200 hover:text-gray-100 cursor-pointer'>https://jobhunter.co/offer/senior-java-developer</div>
+                                    </div>
+                                    <div className='buy_button flex flex-col items-center justify-center border p-4 rounded-md w-full  cursor-pointer hover:bg-white hover:text-blue-500 transition-all'>
+                                        <span className='font-bold'>BUY NOW FOR 47$</span>
+                                    </div>
                                 </div>
 
 
