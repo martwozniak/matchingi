@@ -10,6 +10,7 @@ import {
 import { useTranslation } from 'next-i18next';
 
 import FileUploaderComponent from "../FileUploaderComponent/FileUploaderComponent";
+import Link from "next/link";
 
 
 
@@ -146,60 +147,62 @@ export default function SingleJobElement() {
           </div>
         </div>
       </div>
-
-      <div className="mx-4 my-2 flex cursor-pointer justify-between rounded-md transition-all border border-gray-600/20 bg-gray-600/10 py-3 px-3 text-xs text-white hover:bg-gray-600/20"
-        onClick={() => setOpen(s => !s)}>
-        <div className="flex flex-row gap-2">
-          <div className="flex items-center justify-center">
-            <img
-              src="/img/icons/react/react-original.svg"
-              alt="Company name logo"
-              className="h-[64px] max-h-[64px] w-[64px] max-w-[64px]"
-            />
+      {/** TODO: Add offer parameter dynamic */}
+      <Link href={"/?offer=1"} as="/1">
+        <div className="mx-4 my-2 flex cursor-pointer justify-between rounded-md transition-all border border-gray-600/20 bg-gray-600/10 py-3 px-3 text-xs text-white hover:bg-gray-600/20"
+          onClick={() => setOpen(s => !s)}>
+          <div className="flex flex-row gap-2">
+            <div className="flex items-center justify-center">
+              <img
+                src="/img/icons/react/react-original.svg"
+                alt="Company name logo"
+                className="h-[64px] max-h-[64px] w-[64px] max-w-[64px]"
+              />
+            </div>
+            <div className="flex flex-col">
+              <div>
+                <strong>Senior Java Software Engineer</strong>
+              </div>
+              <div className="flex gap-2 pt-2">
+                <div className="flex items-center justify-center gap-2">
+                  <RxCrosshair2 />
+                  <span>Warsaw</span>
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <RxLapTimer />
+                  <span>Senior</span>
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <RxBackpack />
+                  <span>B2B {/* / UOP / UZ / UOD */}</span>
+                </div>
+              </div>
+              <div className="flex gap-2 pt-2">
+                <div className="rounded-md bg-black p-2 hover:opacity-75">
+                  Redis
+                </div>
+                <div className="rounded-md bg-black p-2 hover:opacity-75">
+                  Postgres
+                </div>
+                <div className="rounded-md bg-black p-2 hover:opacity-75">SQL</div>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col">
-            <div>
-              <strong>Senior Java Software Engineer</strong>
+          <div className="flex flex-col gap-2">
+            <div className="Salary rounded-md bg-black py-2 px-2 md:px-6">
+              <span>17 000 - 35 000 PLN</span>
             </div>
-            <div className="flex gap-2 pt-2">
-              <div className="flex items-center justify-center gap-2">
-                <RxCrosshair2 />
-                <span>Warsaw</span>
+            <div className="flex items-center justify-between">
+              <div
+                onClick={showRegisterPopup}
+                className="flex w-full items-center justify-center gap-4 rounded-md bg-green-600 py-2 px-2 transition hover:bg-green-500"
+              >
+                <RxPaperPlane /> <span>Fast apply</span>
               </div>
-              <div className="flex items-center justify-center gap-2">
-                <RxLapTimer />
-                <span>Senior</span>
-              </div>
-              <div className="flex items-center justify-center gap-2">
-                <RxBackpack />
-                <span>B2B {/* / UOP / UZ / UOD */}</span>
-              </div>
-            </div>
-            <div className="flex gap-2 pt-2">
-              <div className="rounded-md bg-black p-2 hover:opacity-75">
-                Redis
-              </div>
-              <div className="rounded-md bg-black p-2 hover:opacity-75">
-                Postgres
-              </div>
-              <div className="rounded-md bg-black p-2 hover:opacity-75">SQL</div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <div className="Salary rounded-md bg-black py-2 px-2 md:px-6">
-            <span>17 000 - 35 000 PLN</span>
-          </div>
-          <div className="flex items-center justify-between">
-            <div
-              onClick={showRegisterPopup}
-              className="flex w-full items-center justify-center gap-4 rounded-md bg-green-600 py-2 px-2 transition hover:bg-green-500"
-            >
-              <RxPaperPlane /> <span>Fast apply</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      </Link>
     </div >
   );
 }
