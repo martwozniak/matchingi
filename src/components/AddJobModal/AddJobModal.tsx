@@ -109,6 +109,7 @@ export default function AddJobModal() {
                                 </div>
                                 <div className='down flex gap-2 flex-col'>
                                     <div>
+                                        <span className='text-xs'>Job offer link:</span>
                                         <div className='w-full bg-blue-800/30 rounded-md p-2 text-xs text-gray-200 hover:text-gray-100 cursor-pointer'>https://jobhunter.co/offer/senior-java-developer</div>
                                     </div>
                                     <div className='buy_button flex flex-col items-center justify-center border p-4 rounded-md w-full  cursor-pointer hover:bg-white hover:text-blue-500 transition-all'>
