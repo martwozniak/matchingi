@@ -5,6 +5,7 @@ import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import LoginModal from "../LoginModal/LoginModal";
 import MegaMenu from "../MegaMenu/MegaMenu";
+import AddJobModal from "../AddJobModal/AddJobModal";
 
 export default function Header() {
   const { status } = useSession();
@@ -19,7 +20,7 @@ export default function Header() {
           <span className="bold font-bold text-green-400 ">match</span>
           ingi
         </span> */}
-          <img src="/img/logo_4_white.svg" alt="Logo" className="max-h-[46px]" />
+          <img src="/img/logo_5_white.svg" alt="Logo" className="max-h-[46px]" />
         </Link>
         <MegaMenu />
       </div>
@@ -40,15 +41,7 @@ export default function Header() {
           </div>
         </Link>*/}
         <LoginModal />
-
-        <Link href={"/add-offer"}>
-          <div className="floating-buy-button-container hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-lg  transition hover:bg-green-500">
-            <RxPaperPlane /> {/* RxPlus */}
-            <span>
-              Add job post for <span className="font-bold">47$</span>
-            </span>
-          </div>
-        </Link>
+        <AddJobModal />
       </div>
     </div>
   );
