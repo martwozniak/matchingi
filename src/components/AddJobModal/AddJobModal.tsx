@@ -39,7 +39,7 @@ export default function AddJobModal() {
 
 
     return (
-        <React.Fragment>
+        <>
 
             <div className={isItHidden}>
                 <div className='w-screen h-screen transition-all max-h-screen bg-black/70 z-50 absolute top-0 left-0'>
@@ -136,6 +136,6 @@ export default function AddJobModal() {
                 </div>
             </Link>
 
-        </React.Fragment >
+        </ >
     );
 }
