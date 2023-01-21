@@ -95,6 +95,7 @@ const Home: NextPage = () => {
 
             <p className="text-2xl text-white">
               {hello.data ? hello.data.greeting : "Loading tRPC query..."}
+              Hello from trpc
             </p>
             <AuthShowcase />
           </div>
