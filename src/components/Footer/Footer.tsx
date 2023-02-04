@@ -9,7 +9,9 @@ export default function Footer() {
         ingi
       </span>
 
-      <div className="flex gap-4"></div>
+      <div className="flex gap-4">
+        <span>Hello footer</span>
+      </div>
     </div>
   );
 }
