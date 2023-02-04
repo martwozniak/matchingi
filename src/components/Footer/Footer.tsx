@@ -10,7 +10,7 @@ export default function Footer() {
       </span>
 
       <div className="flex gap-4">
-        <span>Hello footer</span>
+        <span>Hello footer webhook test</span>
       </div>
     </div>
   );
