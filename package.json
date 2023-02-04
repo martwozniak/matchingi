@@ -81,5 +81,10 @@
   },
   "ct3aMetadata": {
     "initVersion": "6.11.4"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
   }
 }
