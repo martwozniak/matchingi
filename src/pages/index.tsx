@@ -1,41 +1,39 @@
-import { type NextPage } from "next";
-import Head from "next/head";
-import { signIn, signOut, useSession } from "next-auth/react";
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import nextI18nConfig from "../../next-i18next.config.mjs";
+import { type NextPage } from 'next';
+import Head from 'next/head';
+import { signIn, signOut, useSession } from 'next-auth/react';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import nextI18nConfig from '../../next-i18next.config.mjs';
 
-import { trpc } from "../utils/trpc";
-import { useRouter } from "next/router";
-import Header from "../components/Header/Header";
+import { trpc } from '../utils/trpc';
+import { useRouter } from 'next/router';
+import Header from '../components/Header/Header';
 
-import Filters from "../components/Filters/Filters";
-import SpecialOfferBar from "../components/SpecialOfferBar/SpecialOfferBar";
-import Map from "../components/Map/Map";
-import SelectMenu from "../components/SelectMenu/SelectMenu";
-import SingleJobElement from "../components/SingleJobElement/SingleJobElement";
-import BottomCTA from "../components/BottomCTA/BottomCTA";
+import Filters from '../components/Filters/Filters';
+import SpecialOfferBar from '../components/SpecialOfferBar/SpecialOfferBar';
+import Map from '../components/Map/Map';
+import SelectMenu from '../components/SelectMenu/SelectMenu';
+import SingleJobElement from '../components/SingleJobElement/SingleJobElement';
+import BottomCTA from '../components/BottomCTA/BottomCTA';
 
-import SpecialOffer from "../components/SpecialOfferInJobList/SpecialOffer";
-import Searchbar from "../components/Searchbar/Searchbar";
-
+import SpecialOffer from '../components/SpecialOfferInJobList/SpecialOffer';
+import Searchbar from '../components/Searchbar/Searchbar';
 
 export const getServerSideProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common"], nextI18nConfig, [
-      "en",
-      "pl",
+    ...(await serverSideTranslations(locale, ['common'], nextI18nConfig, [
+      'en',
+      'pl',
     ])),
   },
 });
 
-
 const Home: NextPage = () => {
-  const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
+  const hello = trpc.example.hello.useQuery({ text: 'from tRPC' });
   const { locale, locales, defaultLocale } = useRouter();
   console.log(locale, locales, defaultLocale);
 
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
 
   return (
     <>
@@ -50,9 +48,9 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex max-h-screen h-full flex-col items-center justify-start  bg-gradient-to-b from-black to-[#0D0D0D] overflow-x-none">
+      <main className="overflow-x-none flex h-full max-h-screen flex-col items-center  justify-start bg-gradient-to-b from-black to-[#0D0D0D]">
         <Header />
-        <div className="flex gap-2 items-center w-screen mt-6 sm:mt-0 max-w-screen">
+        <div className="max-w-screen mt-6 flex w-screen items-center gap-2 sm:mt-0">
           <Searchbar />
           <SelectMenu />
         </div>
@@ -64,11 +62,11 @@ const Home: NextPage = () => {
           <div className="__filters hidden w-full">
             <Filters />
           </div>
-          <div className="__offers h-full max-h-screen sm:max-h-[85vh] w-full overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-gray-900">
+          <div className="__offers h-full max-h-screen w-full overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-gray-900 sm:max-h-[85vh]">
             <Filters />
             <SingleJobElement />
             <SingleJobElement />
-            <span>{t("this-stack-uses")}</span>
+            <span>{t('this-stack-uses')}</span>
             <SingleJobElement />
             <SingleJobElement />
             <SingleJobElement />
@@ -94,7 +92,7 @@ const Home: NextPage = () => {
             <SingleJobElement />
 
             <p className="text-2xl text-white">
-              {hello.data ? hello.data.greeting : "Loading tRPC query..."}
+              {hello.data ? hello.data.greeting : 'Loading tRPC query...'}
               Hello from trpc
             </p>
             <AuthShowcase />
@@ -129,7 +127,7 @@ const AuthShowcase: React.FC = () => {
         className="rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20"
         onClick={sessionData ? () => signOut() : () => signIn()}
       >
-        {sessionData ? "Sign out" : "Sign in"}
+        {sessionData ? 'Sign out' : 'Sign in'}
       </button>
     </div>
   );

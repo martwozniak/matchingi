@@ -1,10 +1,14 @@
-import React from 'react'
-
+import React from 'react';
 
 export default function Searchbar() {
-    return (
-        <div className='w-full max-w-[50vw] min-h-[48px] text-xs hidden sm:flex'>
-            <input placeholder="AI, Big Data, Python, TypeScript..." type={'text'} name='searchTerm' className='text-white py-2 sm:min-w-[320px] px-4 border border-white/10 rounded-lg justify-center mx-4 flex gap-4 cursor-pointer bg-transparent w-full transition-all items-center' />
-        </div>
-    )
+  return (
+    <div className="hidden min-h-[48px] w-full max-w-[50vw] text-xs sm:flex">
+      <input
+        placeholder="AI, Big Data, Python, TypeScript..."
+        type={'text'}
+        name="searchTerm"
+        className="mx-4 flex w-full cursor-pointer items-center justify-center gap-4 rounded-lg border border-white/10 bg-transparent py-2 px-4 text-white transition-all sm:min-w-[320px]"
+      />
+    </div>
+  );
 }

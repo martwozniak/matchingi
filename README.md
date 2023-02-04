@@ -1,11 +1,12 @@
-# matchingi 
+# matchingi
+
 ![Demo](https://raw.githubusercontent.com/martwozniak/matchingi/master/docs/preview.gif)
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
 [Docs](/) | [Demo](https://matchingi.com)
 
-## Features 
+## Features
 
 [ ] Offers
 [ ] Tech profiles
@@ -13,8 +14,6 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 [ ] Subscriptions via Stripe
 [ ] Administration Area
 [ ] DnD builders via craft.js
-
-
 
 https://bestofjs.org/
 

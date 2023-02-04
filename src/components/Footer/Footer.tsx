@@ -1,4 +1,3 @@
-
 export default function Footer() {
   return (
     <div className="site__heading flex min-h-[60px] w-full items-center justify-between bg-white px-8">

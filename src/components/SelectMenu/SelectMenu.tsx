@@ -1,24 +1,27 @@
-import React, { useEffect, useRef } from "react";
-import TechnologyCardWithIcon from "../TechnologyCardWithIcon/TechnologyCardWithIcon";
+import React, { useEffect, useRef } from 'react';
+import TechnologyCardWithIcon from '../TechnologyCardWithIcon/TechnologyCardWithIcon';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
 export default function SelectMenu() {
-
   return (
-    <div className=" bg-grey-700 hidden min-h-[60px] max-w-full sm:flex mb-2 overflow-hidden">
-      <div> {/*className="scroll flex max-w-full overflow-x-scroll scroll-smooth scrollbar scrollbar-none scrollbar-track-gray-900 scrollbar-thumb-gray-800 gap-4"*/}
-
-        <Splide aria-label="My Favorite Images" className="max-w-full overflow-hidden" options={{
-          rewind: true,
-          perPage: 20,
-          width: 'full',
-          gap: '0',
-          arrows: false,
-          pagination: false,
-          lazyLoad: true,
-        }}>
-
+    <div className=" bg-grey-700 mb-2 hidden min-h-[60px] max-w-full overflow-hidden sm:flex">
+      <div>
+        {' '}
+        {/*className="scroll flex max-w-full overflow-x-scroll scroll-smooth scrollbar scrollbar-none scrollbar-track-gray-900 scrollbar-thumb-gray-800 gap-4"*/}
+        <Splide
+          aria-label="My Favorite Images"
+          className="max-w-full overflow-hidden"
+          options={{
+            rewind: true,
+            perPage: 20,
+            width: 'full',
+            gap: '0',
+            arrows: false,
+            pagination: false,
+            lazyLoad: true,
+          }}
+        >
           <TechnologyCardWithIcon
             icon="react"
             text="React.js"
@@ -176,7 +179,6 @@ export default function SelectMenu() {
             description="Programming language with more than 6000 companies using it worldwide"
           />
         </Splide>
-
       </div>
     </div>
   );

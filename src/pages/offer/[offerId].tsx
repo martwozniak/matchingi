@@ -1,11 +1,11 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
-import React from "react";
-import Header from "../../components/Header/Header";
-import SelectMenu from "../../components/SelectMenu/SelectMenu";
-import Filters from "../../components/Filters/Filters";
-import SingleJobElement from "../../components/SingleJobElement/SingleJobElement";
-import Map from "../../components/Map/Map";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import React from 'react';
+import Header from '../../components/Header/Header';
+import SelectMenu from '../../components/SelectMenu/SelectMenu';
+import Filters from '../../components/Filters/Filters';
+import SingleJobElement from '../../components/SingleJobElement/SingleJobElement';
+import Map from '../../components/Map/Map';
 export default function Index() {
   const router = useRouter();
   const { offerId } = router.query;
