@@ -1,7 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
-import maplibregl from "maplibre-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+import React, { useRef, useEffect, useState } from 'react';
+import maplibregl from 'maplibre-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 //mapboxgl.accessToken = "4lOMEJLMkq3nCLCp0FnT";
 
 export default function Map() {
@@ -10,7 +10,7 @@ export default function Map() {
   let defLng = 21.02;
   let defLat = 52.23;
   // get location coordinates from db
-  if (locale == "en") {
+  if (locale == 'en') {
     defLng = 21.02;
     defLat = 52.23;
   }
@@ -25,7 +25,7 @@ export default function Map() {
   const [lng] = useState(defLng);
   const [lat] = useState(defLat);
   const [zoom] = useState(5);
-  const [API_KEY] = useState("4lOMEJLMkq3nCLCp0FnT");
+  const [API_KEY] = useState('4lOMEJLMkq3nCLCp0FnT');
 
   useEffect(() => {
     if (map.current) return; //stops map from intializing more than once
@@ -40,9 +40,7 @@ export default function Map() {
     // new maplibregl.Marker({ color: "#FF0000" })
     //   .setLngLat([139.7525, 35.6846])
     //   .addTo(map.current);
-
   });
-
 
   // ! TODO: Change height of the website in normal way
   return (
@@ -50,9 +48,7 @@ export default function Map() {
       <div
         ref={mapContainer}
         className="map-container max-h-80vh max-w-screen h-[95vh] w-[50vw]"
-      >
-
-      </div>
+      ></div>
     </div>
   );
 }

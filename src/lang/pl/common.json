@@ -1,18 +1,18 @@
 {
-    "page.home.head.title": "Next.js i18n example",
-    "page.home.head.meta.description": "Next.js i18n example - English",
-    "page.home.title": "Welcome to <b>Next.js i18n tutorial</b>",
-    "page.home.description": "You are currently viewing the homepage in English 🚀",
-    "documentation": "documentation",
-    "loading": "loading",
-    "this-stack-uses": "Ten stack technologiczny korzysta z:",
-    "techcard": {
-        "nextjs": {
-            "description": "The React Framework for Production"
-        },
-        "prisma": {
-            "description": "Build data-driven JavaScript & TypeScript apps in less time"
-        }
+  "page.home.head.title": "Next.js i18n example",
+  "page.home.head.meta.description": "Next.js i18n example - English",
+  "page.home.title": "Welcome to <b>Next.js i18n tutorial</b>",
+  "page.home.description": "You are currently viewing the homepage in English 🚀",
+  "documentation": "documentation",
+  "loading": "loading",
+  "this-stack-uses": "Ten stack technologiczny korzysta z:",
+  "techcard": {
+    "nextjs": {
+      "description": "The React Framework for Production"
     },
-    "page.login.title": "Wybierz swoją metodę logowania"
+    "prisma": {
+      "description": "Build data-driven JavaScript & TypeScript apps in less time"
+    }
+  },
+  "page.login.title": "Wybierz swoją metodę logowania"
 }

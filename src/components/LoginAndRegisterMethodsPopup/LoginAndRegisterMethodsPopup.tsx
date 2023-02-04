@@ -1,8 +1,5 @@
-import React from 'react'
-
+import React from 'react';
 
 export default function LoginAndRegisterMethodsPopup() {
-    return (
-        <div>LoginAndRegisterMethodsPopup</div>
-    )
+  return <div>LoginAndRegisterMethodsPopup</div>;
 }

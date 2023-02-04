@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "../components/Header/Header";
-import Link from "next/link";
-import { RxPaperPlane } from "react-icons/rx";
+import React from 'react';
+import Header from '../components/Header/Header';
+import Link from 'next/link';
+import { RxPaperPlane } from 'react-icons/rx';
 
 export default function SystemStatus() {
   return (
@@ -11,7 +11,7 @@ export default function SystemStatus() {
         <div className="container flex flex-col items-center justify-center">
           <span>System status:</span>
           <div className="min-w-2xl w-full max-w-3xl py-2">
-            <Link href={"/add-offer"}>
+            <Link href={'/add-offer'}>
               <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-gray-600/60  px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-600/70">
                 <span className="flex h-3 w-3">
                   <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-sky-400 opacity-75"></span>
@@ -26,7 +26,7 @@ export default function SystemStatus() {
             </Link>
           </div>
           <div className="min-w-2xl w-full max-w-3xl py-2">
-            <Link href={"/add-offer"}>
+            <Link href={'/add-offer'}>
               <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-gray-600/60  px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-600/70">
                 <span className="flex h-3 w-3">
                   <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-green-400 opacity-75"></span>
@@ -41,7 +41,7 @@ export default function SystemStatus() {
             </Link>
           </div>
           <div className="min-w-2xl w-full max-w-3xl py-2">
-            <Link href={"/add-offer"}>
+            <Link href={'/add-offer'}>
               <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-gray-600/60  px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-600/70">
                 <span className="flex h-3 w-3">
                   <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-gray-600/60 opacity-75"></span>
@@ -56,7 +56,7 @@ export default function SystemStatus() {
             </Link>
           </div>
           <div className="min-w-2xl w-full max-w-3xl py-2">
-            <Link href={"/add-offer"}>
+            <Link href={'/add-offer'}>
               <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-gray-600/60  px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-600/70">
                 <span className="flex h-3 w-3">
                   <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-sky-400 opacity-75"></span>
@@ -71,7 +71,7 @@ export default function SystemStatus() {
             </Link>
           </div>
           <div className="min-w-2xl w-full max-w-3xl py-2">
-            <Link href={"/add-offer"}>
+            <Link href={'/add-offer'}>
               <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-gray-600/60  px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-600/70">
                 <span className="flex h-3 w-3">
                   <span className="relative inline-flex h-3 w-3 rounded-full bg-gray-600/60"></span>
@@ -85,7 +85,7 @@ export default function SystemStatus() {
             </Link>
           </div>
           <div className="min-w-2xl w-full max-w-3xl py-2">
-            <Link href={"/add-offer"}>
+            <Link href={'/add-offer'}>
               <div className="hover:opacity-85 flex cursor-pointer select-none items-center gap-2 rounded-md  bg-gray-600/60  px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-600/70">
                 <span className="flex h-3 w-3">
                   <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-sky-400 opacity-75"></span>

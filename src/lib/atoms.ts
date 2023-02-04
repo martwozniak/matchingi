@@ -1,6 +1,6 @@
-import { atom } from 'jotai'
+import { atom } from 'jotai';
 const cartAtom = atom({
-    id: null,
-    quantity: 0,
-})
-export { cartAtom }
+  id: null,
+  quantity: 0,
+});
+export { cartAtom };
