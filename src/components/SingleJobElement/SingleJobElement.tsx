@@ -111,7 +111,7 @@ export default function SingleJobElement() {
                     Strong understanding of software development principles and design patterns  <br />
                     Experience with Agile methodologies and test-driven development  <br />
                     Ability to work independently and as part of a team  <br />
-                    Bachelor's degree in Computer Science or related field  <br />
+                    Bachelors degree in Computer Science or related field  <br />
                     Minimum of 5 years of experience in software development  <br />
                     This is a full-time position with competitive salary and benefits package. If you are a highly motivated individual with a passion for software development, we would love to hear from you!  <br />
                   </span>
