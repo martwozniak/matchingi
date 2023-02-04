@@ -10,25 +10,22 @@ export default function Header() {
   const { push } = useRouter();
 
   return (
-    <div className="site__heading mt-2 flex min-h-[70px] w-full flex-col items-center justify-between gap-2 px-8 sm:min-h-[60px] sm:flex-row">
-
-      <div className="flex justify-center items-center gap-8">
+    <div className="site__heading mt-2 flex min-h-[70px] w-full flex-col items-center justify-between gap-4 px-8 sm:min-h-[60px] sm:flex-row">
+      <div className="align-center flex items-center gap-8">
         <Link href={'/'}>
           {/* <span className="hover:opacity-85 cursor-pointer select-none text-white hover:opacity-75">
           <span className="bold font-bold text-green-400 ">match</span>
           ingi
         </span> */}
-          <div className='flex items-center justify-center'>
-            <img src="/img/rects.svg" alt="img" className='max-h-[24px] mt-[-1px] mr-1' />
+          <div className='flex gap-2 flex-row'>
+
             <img
               src="/img/Matchingi_white.svg"
               alt="Logo"
-              className="max-h-[16px]"
+              className="max-h-[18px]"
             />
           </div>
-
         </Link>
-
         <MegaMenu />
       </div>
 
