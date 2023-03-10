@@ -31,6 +31,7 @@ export default function SingleJobElement() {
   }
 
   return (
+<<<<<<< Updated upstream
     <div>
       <div className={isItHidden}>
         <div className="absolute top-0 left-0 z-50 h-screen max-h-screen w-screen bg-black/70 transition-all">
@@ -183,6 +184,25 @@ export default function SingleJobElement() {
                   </div>
                 </div>
               </div>
+=======
+    <div className="mx-2 my-2 flex cursor-pointer justify-between rounded-md bg-white/10 py-3 px-3 text-xs text-white backdrop-blur-sm hover:bg-white/20">
+      <div className="flex flex-row gap-2">
+        <div className="flex items-center justify-center">
+          <img
+            src="/img/icons/react/react-original.svg"
+            alt="Company name logo"
+            className="h-[64px] max-h-[64px] w-[64px] max-w-[64px]"
+          />
+        </div>
+        <div className="flex flex-col">
+          <div>
+            <strong>Senior Java Software Engineer</strong>
+          </div>
+          <div className="flex gap-2 pt-2">
+            <div className="flex items-center justify-center gap-2">
+              <RxCrosshair2 />
+              <span>Warsaw</span>
+>>>>>>> Stashed changes
             </div>
           </div>
         </div>
